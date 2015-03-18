@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "node index",
+    "test": "mocha",
+    "assets": "gulp build",
+    "assets:watch": "gulp watch"
+  },
+  "dependencies": {
+    "babel": "^4.7.8",
+    "bootstrap": "^3.3.4",
+    "domready": "^1.0.7",
+    "dotenv": "^1.0.0",
+    "fastclick": "^1.0.6",
+    "global": "^4.3.0",
+    "koa": "^0.18.1",
+    "koa-body-parsers": "^1.0.0",
+    "koa-compress": "^1.0.8",
+    "koa-qs": "^2.0.0",
+    "koa-router": "^4.2.0",
+    "koa-static": "^1.4.9",
+    "koa-views": "^3.0.0",
+    "swig": "^1.4.2",
+    "thinky": "^1.16.6"
+  },
+  "devDependencies": {
+    "babel-loader": "^4.2.0",
+    "co": "^4.4.0",
+    "gulp": "^3.8.11",
+    "koa-logger": "^1.2.2",
+    "mocha": "^2.2.1",
+    "rump": "^0.6.2",
+    "rump-images": "^0.6.0",
+    "rump-less": "^0.6.6",
+    "rump-scripts": "^0.6.8",
+    "rump-static": "^0.6.0",
+    "should": "^5.1.0",
+    "supertest": "^0.15.0",
+    "supertest-as-promised": "^1.0.0"
+  }
+}
