@@ -13,16 +13,20 @@ export default router;
 function* negotiator(next) {
   try {
     yield next;
-    // TODO Better check for if view exists
     if(!this.view) {
       this.body = {};
       this.status = 404;
     }
+    yield render.call(this);
   }
   catch({stack}) {
     this.body = production ? {} : {stack};
     this.status = 500;
+    yield render.call(this);
   }
+}
+
+function* render() {
   const type = this.accepts(...Object.keys(types));
   const handler = types[type] || unsupported;
   yield handler.call(this);
