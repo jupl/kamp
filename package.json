@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "babel": "^4.7.8",
-    "bootstrap": "^3.3.4",
     "domready": "^1.0.7",
     "dotenv": "^1.0.0",
     "fastclick": "^1.0.6",
@@ -20,6 +19,7 @@
     "koa-router": "^4.2.0",
     "koa-static": "^1.4.9",
     "koa-views": "^3.0.0",
+    "normalize.css": "^3.0.2",
     "swig": "^1.4.2",
     "thinky": "^1.16.6"
   },
