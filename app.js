@@ -24,7 +24,7 @@ app.use(compress());
 app.use(assets(paths.assets));
 bodyParsers(app);
 qs(app);
-app.use(views(paths.views, viewsConfig))
+app.use(views(paths.views, viewsConfig));
 app.use(router.routes());
 app.use(router.allowedMethods());
 
