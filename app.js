@@ -4,6 +4,7 @@
 import koa from 'koa';
 import bodyParsers from 'koa-body-parsers';
 import compress from 'koa-compress';
+import helmet from 'koa-helmet';
 import qs from 'koa-qs';
 import assets from 'koa-static';
 import views from 'koa-views';
@@ -18,6 +19,7 @@ if(development) {
   const logger = require('koa-logger');
   app.use(logger());
 }
+app.use(helmet.defaults());
 app.use(compress());
 app.use(assets(paths.assets));
 bodyParsers(app);

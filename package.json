@@ -15,6 +15,7 @@
     "koa": "^0.18.1",
     "koa-body-parsers": "^1.0.0",
     "koa-compress": "^1.0.8",
+    "koa-helmet": "^0.0.3",
     "koa-qs": "^2.0.0",
     "koa-router": "^4.2.0",
     "koa-static": "^1.4.9",
