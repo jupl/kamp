@@ -1,3 +1,4 @@
+/* eslint no-var:0 */
 /*
  * Define and set up Gulp tasks to build assets.
  */

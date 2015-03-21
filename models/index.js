@@ -6,4 +6,7 @@ import * as config from '../config/database';
 const thinky = newThinky(config);
 
 export default thinky;
-export const model = (...args) => thinky.createModel(...args);
+
+export function model(...args) {
+  return thinky.createModel(...args);
+}
