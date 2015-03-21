@@ -22,7 +22,7 @@
     "koa-static": "^1.4.9",
     "koa-views": "^3.0.0",
     "normalize.css": "^3.0.2",
-    "swig": "^1.4.2",
+    "swig": "1.4.1",
     "thinky": "^1.16.6"
   },
   "devDependencies": {
