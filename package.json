@@ -26,6 +26,7 @@
     "fastclick": "^1.0.6",
     "global": "^4.3.0",
     "normalize.css": "^3.0.2",
+    "retina.js": "^1.1.0",
     "babel-loader": "^4.2.0",
     "co": "^4.4.0",
     "eslint": "^0.17.1",
