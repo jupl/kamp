@@ -1,6 +1,6 @@
 {% spaceless %}
   <!doctype html>
-  <html>
+  <html class="no-js">
     <head>
       {% block head %}
         <meta charset="UTF-8">
