@@ -1,12 +1,10 @@
-/* eslint no-var:0 */
-/* eslint vars-on-top:0 */
 /*
  * Start up application.
  */
-require('dotenv').load();
-require('./setup');
-var app = require('./app');
-var environment = require('./config/environment');
+import app from './app';
+import {port} from './config/environment';
+const instance = app.listen(port);
 
-module.exports = app.listen(environment.port);
-console.log('Application started on port', environment.port);
+console.log('Application started on port', port);
+
+export default instance;
