@@ -1,10 +1,9 @@
 import 'browsernizr/test/touchevents';
 import modernizr from 'browsernizr';
-import domready from 'domready';
 import fastclick from 'fastclick';
 import document from 'global/document';
 
-domready(addFastClick);
+addFastClick();
 
 function addFastClick() {
   if('addEventListener' in document) {

@@ -1,15 +1,22 @@
 {
   "private": true,
   "scripts": {
-    "start": "node start",
+    "start": "npm run assets && npm run server",
     "test": "mocha",
     "assets": "gulp build",
     "assets:watch": "gulp watch",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "server": "node start"
   },
   "dependencies": {
     "babel": "^4.7.8",
+    "babel-loader": "^4.2.0",
+    "babel-runtime": "^4.7.16",
+    "browsernizr": "^1.0.2",
     "dotenv": "^1.0.0",
+    "fastclick": "^1.0.6",
+    "global": "^4.3.0",
+    "gulp": "^3.8.11",
     "koa": "^0.18.1",
     "koa-body-parsers": "^1.0.0",
     "koa-compress": "^1.0.8",
@@ -18,27 +25,21 @@
     "koa-router": "^4.2.0",
     "koa-static": "^1.4.9",
     "koa-views": "^3.0.0",
-    "swig": "1.4.1",
-    "thinky": "^1.16.6"
-  },
-  "devDependencies": {
-    "babel-loader": "^4.2.0",
-    "browsernizr": "^1.0.2",
-    "co": "^4.4.0",
-    "domready": "^1.0.7",
-    "eslint": "^0.17.1",
-    "fastclick": "^1.0.6",
-    "global": "^4.3.0",
-    "gulp": "^3.8.11",
-    "koa-logger": "^1.2.2",
-    "mocha": "^2.2.1",
     "normalize.css": "^3.0.2",
     "retina.js": "^1.1.0",
     "rump": "^0.6.2",
     "rump-images": "^0.6.0",
     "rump-less": "^0.6.6",
-    "rump-scripts": "^0.6.8",
+    "rump-scripts": "^0.6.10",
     "rump-static": "^0.6.0",
+    "swig": "1.4.1",
+    "thinky": "^1.16.6"
+  },
+  "devDependencies": {
+    "co": "^4.4.0",
+    "eslint": "^0.17.1",
+    "koa-logger": "^1.2.2",
+    "mocha": "^2.2.1",
     "should": "^5.1.0",
     "supertest": "^0.15.0",
     "supertest-as-promised": "^1.0.0"
